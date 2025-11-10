@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plant Palette</title>
+
+  <!-- Fonts & Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://use.typekit.net">
+</head>
+
+<body>
+  <header>
+    <h1>Plant Palette</h1>
+    <p class="subtitle">Find plants and color palettes that match your mood 🌿</p>
+  </header>
+
+  <main>
+    <!-- Mood Selector Section -->
+    <section id="mood-section">
+      <label for="mood-select">Choose your mood:</label>
+      <select id="mood-select">
+        <option value="">--Select a mood--</option>
+        <option value="calm">Calm</option>
+        <option value="energized">Energized</option>
+        <option value="dreamy">Dreamy</option>
+        <option value="fresh">Fresh</option>
+        <option value="grounded">Grounded</option>
+      </select>
+      <button id="fetch-btn">Generate Palette 🌈</button>
+    </section>
+
+    <!-- Error Message (hidden by default) -->
+    <div id="error-message" hidden>
+      <p>⚠️ Oops! Something went wrong fetching your plants or palette. Try again.</p>
+    </div>
+
+   <!-- Loading indicator -->
+    <div id="loading" hidden>
+        <div class="leaf-spinner"></div>
+        <p>Growing your palette...</p>
+    </div>
+
+
+    <!-- Color Palette Display -->
+    <section id="palette-section">
+      <h2>Color Palette</h2>
+      <div id="palette-container">
+        <!-- JavaScript will insert color swatches here -->
+      </div>
+    </section>
+
+    <!-- Plant Suggestions Display -->
+    <section id="plants-section">
+      <h2>Plant Suggestions</h2>
+      <div id="plants-container">
+        <!-- JavaScript will insert plant cards here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 🌱 by Selah</p>
+  </footer>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
